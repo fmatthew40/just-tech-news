@@ -1,5 +1,8 @@
 async function loginFormHandler(event) {
     event.preventDefault();
+
+    const withAuth = require('../utils/auth');
+
   
     const email = document.querySelector('#email-login').value.trim();
     const password = document.querySelector('#password-login').value.trim();
